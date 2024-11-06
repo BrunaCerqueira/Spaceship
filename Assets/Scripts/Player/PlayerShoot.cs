@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
-    GameObject Shooter;
+    GameObject shooter;
     public GameObject tiro;
+    public float cooldown = 1.5f;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-
+        shooter = transform.Find("Shooter").gameObject;
     }
 
     // Update is called once per frame
@@ -18,7 +21,7 @@ public class PlayerShoot : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(tiro, Shooter.transform.position, Quaternion.identity);
+            Instantiate(tiro, shooter.transform.position, Quaternion.identity);
         }
     }
 }
