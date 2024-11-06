@@ -21,5 +21,9 @@ public class GameStart : MonoBehaviour
     {
         SceneManager.LoadScene("Game");
     }
+    public void Exit ()
+    {
+        Application.Quit();
+    }
 
 }
