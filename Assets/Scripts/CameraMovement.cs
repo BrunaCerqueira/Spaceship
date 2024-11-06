@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerShoot : MonoBehaviour
+public class CameraMovement : MonoBehaviour
 {
-    GameObject Shooter;
-    public GameObject tiro;
+    public float camspeed = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -16,9 +15,6 @@ public class PlayerShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Instantiate(tiro, Shooter.transform.position, Quaternion.identity);
-        }
+        transform.Translate(Vector3.right * camspeed * Time.deltaTime);
     }
 }
