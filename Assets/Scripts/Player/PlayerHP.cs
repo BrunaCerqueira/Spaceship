@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHP : MonoBehaviour
 {
-    public static int HP = 3;
+    public static int HP = 5;
     public TMP_Text life;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class PlayerHP : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (HP == 0)
+        if (HP <= 0)
         {
             FullHealth();
             SceneManager.LoadScene("SceneDerrota");
@@ -41,6 +41,6 @@ public class PlayerHP : MonoBehaviour
 
     public void FullHealth()
     {
-        HP += 3;
+        HP += 5;
     }
 }

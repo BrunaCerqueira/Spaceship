@@ -9,7 +9,7 @@ public class EnemySpanwner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("EnemyGenerator", 0, 2);
+        InvokeRepeating("EnemyGenerator", 0, 4);
     }
 
     // Update is called once per frame

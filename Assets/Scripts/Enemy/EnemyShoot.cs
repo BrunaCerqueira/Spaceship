@@ -7,14 +7,13 @@ using UnityEngine.Playables;
 public class EnemyShoot : MonoBehaviour
 {
     public GameObject bullet;
-    public float enemyspeed = 2;
     void Start()
     {
         InvokeRepeating("Shoot", 0, 2);
     }
     void Update()
     {
-        transform.Translate(Vector3.left * Time.deltaTime * enemyspeed);
+
     }
 
     private void Shoot()
