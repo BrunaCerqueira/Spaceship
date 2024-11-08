@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyBullet : MonoBehaviour
@@ -16,4 +17,5 @@ public class EnemyBullet : MonoBehaviour
     {
         transform.Translate(Vector3.left * Time.deltaTime * enemybulletspeed);
     }
+
 }

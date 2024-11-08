@@ -21,9 +21,9 @@ public class ProjectilMove : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Destroy(collision.gameObject); //enemy destroy
+            Destroy(collision.gameObject); // enemy destroy
             GameManager.instance.GainPoints(1);
-            Destroy(gameObject); //bullet destroy 
+            Destroy(gameObject); // bullet destroy 
         }
 
 
