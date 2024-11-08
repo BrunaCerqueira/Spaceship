@@ -1,21 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.Playables;
 
 public class EnemyShoot : MonoBehaviour
 {
     public GameObject bullet;
-    // Start is called before the first frame update
+    public float enemyspeed = 2;
     void Start()
     {
         InvokeRepeating("Shoot", 0, 2);
     }
-
-    // Update is called once per frame
     void Update()
     {
-
+        transform.Translate(Vector3.left * Time.deltaTime * enemyspeed);
     }
 
     private void Shoot()

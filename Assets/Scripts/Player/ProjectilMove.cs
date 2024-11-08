@@ -19,8 +19,13 @@ public class ProjectilMove : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        GameObject alvo = collision.gameObject;
-        Destroy(gameObject);
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(collision.gameObject); //enemy destroy
+            Destroy(gameObject); //bullet destroy 
+        }
+
+
 
     }
 }
