@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b855996c32cbf4c8bb83c5575550b1f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemybulletspeed: 5
+  enemybulletspeed: 7
 --- !u!33 &110714726278540201
 MeshFilter:
   m_ObjectHideFlags: 0
