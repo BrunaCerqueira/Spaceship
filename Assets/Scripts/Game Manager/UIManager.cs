@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -30,5 +31,9 @@ public class UIManager : MonoBehaviour
     public void AtualizarPontos(int pontos)
     {
         textopontos.text = "Score: " + pontos.ToString();
+        if (pontos == 10)
+        {
+            SceneManager.LoadScene("Victory");
+        }
     }
 }

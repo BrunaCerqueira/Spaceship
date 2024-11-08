@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHP : MonoBehaviour
 {
-    public static int HP = 3;
+    public static int HP = 5;
     public TMP_Text life;
     // Start is called before the first frame update
     void Start()
