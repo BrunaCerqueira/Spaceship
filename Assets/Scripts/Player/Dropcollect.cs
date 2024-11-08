@@ -2,18 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy1move : MonoBehaviour
+public class Dropcollect : MonoBehaviour
 {
-    public float enemyspeed = 3f;
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, 5f);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.left * Time.deltaTime * enemyspeed);
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

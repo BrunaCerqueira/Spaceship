@@ -139,8 +139,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.3143026, y: 1, z: 1}
+  m_Center: {x: 0.15715128, y: 0, z: 0}
 --- !u!114 &4721042252840384329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0e42069040bc124799360a114217314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiro: {fileID: 8468206738386910815, guid: d51bf10c7713c5042bf9f46e9fb8ed4c, type: 3}
+  tiro: {fileID: 1253428550627340661, guid: 1995f8aba708d46ff86982e4f2b808d6, type: 3}
   cooldown: 1.5
 --- !u!114 &4215305832168848442
 MonoBehaviour:
@@ -180,7 +180,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08028653998074ebb98c5231412d0205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 3
   life: {fileID: 0}
 --- !u!1 &8180112968265961608
 GameObject:

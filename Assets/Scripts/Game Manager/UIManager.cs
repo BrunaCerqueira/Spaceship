@@ -31,7 +31,7 @@ public class UIManager : MonoBehaviour
     public void AtualizarPontos(int pontos)
     {
         textopontos.text = "Score: " + pontos.ToString();
-        if (pontos == 10)
+        if (pontos == 20)
         {
             SceneManager.LoadScene("Victory");
         }

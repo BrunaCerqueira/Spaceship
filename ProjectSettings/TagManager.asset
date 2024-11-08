@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Bullet
   - Enemy
+  - Drop1
+  - EnemyBullet
+  - drop2
   layers:
   - Default
   - TransparentFX
